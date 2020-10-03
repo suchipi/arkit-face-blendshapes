@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { OBJModel, DirectionLight } from "react-3d-viewer";
+import * as THREE from "three";
+import names from "./names";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Picture</th>
+        <th>Model</th>
+      </tr>
+      {names.map((name) => (
+        <tr>
+          <td>{name}</td>
+          <td>
+            <img src={require("./images/" + name + ".png")} />
+          </td>
+          <td>
+            <OBJModel src={require("./models/" + name + ".obj")}>
+              <DirectionLight
+                color={0xbbbbbb}
+                position={new THREE.Vector3(-30, 30, 30)}
+              />
+              <DirectionLight
+                color={0x666666}
+                position={new THREE.Vector3(30, 30, 30)}
+              />
+            </OBJModel>
+          </td>
+        </tr>
+      ))}
+    </table>
   );
 }
-
-export default App;

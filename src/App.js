@@ -3,7 +3,6 @@ import ReactMarkdown from "react-markdown";
 import { OBJModel, DirectionLight } from "react-3d-viewer";
 import * as THREE from "three";
 import names from "./names";
-import useWindowSize from "./useWindowSize";
 
 const preamble = `# ARKit Face Blendshapes
 
@@ -26,8 +25,7 @@ This website shows an example of each blendshape that ARKit uses to describe fac
 `;
 
 export default function App() {
-  const windowSize = useWindowSize();
-  const modelViewerSize = windowSize.width > 1300 ? 500 : 300;
+  const modelViewerSize = 500;
 
   return (
     <div style={{ maxWidth: 1967, margin: "0 auto" }}>

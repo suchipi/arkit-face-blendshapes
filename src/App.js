@@ -21,7 +21,8 @@ This website shows an example of each blendshape that ARKit uses to describe fac
 
 ## Notes
 
-\`tongueOut\` is currently missing because I couldn't find an image or model for it.
+- \`tongueOut\` is currently missing because I couldn't find an image or model for it.
+- __If you can't see all of the 3D Models, try opening the website in Firefox instead.__
 `;
 
 export default function App() {

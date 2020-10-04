@@ -14,3 +14,47 @@ code {
 td {
   border: 1px solid black;
 }
+
+[data-loader="obj"] {
+  width: initial !important;
+  height: initial !important;
+}
+
+@media (max-width: 1380px) {
+  canvas {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  canvas {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 790px) {
+  table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  td {
+    border: none;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    border: 1px solid black;
+  }
+
+  th,
+  td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

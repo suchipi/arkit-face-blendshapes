@@ -21,14 +21,16 @@ td {
 }
 
 @media (max-width: 1380px) {
-  canvas {
+  canvas,
+  .model-viewer-placeholder {
     width: 300px !important;
     height: 300px !important;
   }
 }
 
 @media (max-width: 990px) {
-  canvas {
+  canvas,
+  .model-viewer-placeholder {
     width: 200px !important;
     height: 200px !important;
   }
@@ -57,4 +59,14 @@ td {
     align-items: center;
     justify-content: center;
   }
+}
+
+button {
+  background-color: #01a7ff;
+  color: white;
+  border: 1px solid #005d8f;
+  font-size: inherit;
+  font-family: inherit;
+  text-align: inherit;
+  border-radius: 4px;
 }

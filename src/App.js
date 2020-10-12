@@ -18,6 +18,8 @@ This website shows an example of each blendshape that ARKit uses to describe fac
 - [How to create Apple’s Animoji using ARKit?](https://medium.com/@ashutoshdingankar/how-to-create-apples-animoji-using-arkit-4691e04bfc42)
 - [iPhone X Facial Capture - Apple blendshapes](http://blog.kiteandlightning.la/iphone-x-facial-capture-apple-blendshapes/)
   - This is where I got the 3d models from. I don't know where they originally got them.
+- [クリックで実装！パーフェクトシンク　BY HANA Tool](https://hinzka.hatenablog.com/entry/2020/10/12/014540)
+  - This tool will automatically create all the blendshapes for an avatar created with [VRoid](https://vroid.com/en/).
 
 ## Notes
 

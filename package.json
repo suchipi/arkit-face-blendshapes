@@ -22,7 +22,15 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "unobtrusive",
+      "unobtrusive/import",
+      "unobtrusive/react"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    }
   },
   "browserslist": {
     "production": [
@@ -37,6 +45,10 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-unobtrusive": "^1.2.5",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.4",
     "pypress": "^2.0.3"
   }
 }
